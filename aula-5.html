@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 5</title>
+    <title>Aula7</title>
 </head>
 <body>
-    <button onclick="alterar();"> Alterar texto </button> <br>
-    <h2> Aula 5</h2>
-    <h3>Pegando elementos pela tag</h3>
-    <h3> Aprendendo o comando <i>getElementById</i></h3>
-    <h3> Este comando retorna um vetor</h3>
+   <h3>Utilizando a função onchange para alterar o texto digitado pelo usuário.</h3>
+   <label for=""nome>Nome;</label>
+   <input style"heigth: 30px width: 200px;"
+   type="text" id="nome" onchange"converter();">
 
     <script>
-        function alterar(){
-            document.getElementsByTagName('h3')[1].innerHTML = "Alterei o texto do segundo h3!";
-            document.getElementsByTagName('h3')[2].innerHTML = "Alterei o texto do terceiro h3!";
-            document.getElementsByTagName('h2')[0].innerHTML = "Troquei tambem a tag h2";
-           
+        function converter(){
+             const caixa = document
+             getElementByID("Nome") 
+             caixa.value = caixa.value.toUpperCase();
+            
         }
     </script>
 </body>
